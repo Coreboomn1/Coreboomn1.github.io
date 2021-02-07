@@ -1,0 +1,286 @@
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  height: 100vh
+  overflow: hidden
+//$breakpoint-laptop: 414px
+//$breakpoint-laptop: 567px
+//@media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max)
+.mainDiv
+  height: 100vh
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+
+.rectangles
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 50vh
+  width: 45vw
+  font-size: 4rem
+  background-size: 100%
+  transition: 1s
+
+.rectangles:hover
+  background-size: 120%
+  transition: 1s
+
+.rectangles p
+  background-color: white
+  padding: 2%
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.75)
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.75)
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.75)
+  font-family: 'Amatic SC', cursive
+  cursor: pointer
+  transition: 0.5s
+
+.rectangles p:hover
+  -webkit-box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.75)
+  -moz-box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.75)
+  box-shadow: 0 0 17px 1px rgba(0, 0, 0, 0.75)
+  transition: 0.5s
+  transform: rotate(-5deg) scale(1.2)
+
+.omnie
+  background-image: url("menuImages/omnie.jpg")
+  background-position: center
+
+.projekty
+  background-image: url("menuImages/projekty.jpg")
+  background-position: bottom
+
+.uslugi
+  background-image: url("menuImages/uslugi.jpg")
+  background-size: 100%
+  background-position: left bottom
+
+.kontakt
+  background-image: url("menuImages/kontakt.jpg")
+  background-position: left
+
+.menuDescription
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  height: 100vh
+  width: 10vw
+
+.menuSlider
+  position: absolute
+  top: 10vh
+  left: -100vw
+  //left: 0
+  height: 80vh
+  width: 88vw
+  transition: 0.7s ease-out
+  background-color: white
+  box-shadow: -2px 0px 8px 5px whitesmoke
+  overflow-x: hidden
+
+.menuSliderActive
+  top: 10vh
+  left: 0
+  height: 80vh
+  margin: 0 auto
+  transition: 0.9s ease
+  background-color: white
+
+.omnieInSlider
+  display: none
+  position: absolute
+  left: 10%
+  height: 100%
+  width: 80%
+  margin: 0 auto
+  //z-index: -1
+
+.faceImg
+  height: 100%
+  width: 50%
+  background-image: url("menuImages/Klaudia.jpg")
+  background-size: 100%
+
+.omnieDescription
+  height: 100%
+  width: 50%
+
+.omnieDescription h1
+  font-family: 'Amatic SC', cursive
+  //margin: 2%
+  color: deeppink
+  text-align: center
+
+.omnieDescription p
+  text-align: justify
+  margin: 2%
+
+.projektyInSlider
+  display: none
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  position: absolute
+  //z-index: -1
+  height: 100%
+  width: 100%
+  background-image: url("menuImages/galleryBackground.jpg")
+  background-size: 100%
+.projectsImg
+  height: auto
+  width: 14vw
+  margin: 1%
+  transition: 0.2s
+
+
+.projectsImg img
+  border-radius: 2%
+  max-height: 100%
+  width: 14vw
+  overflow: hidden
+  -webkit-box-shadow: 8px 8px 9px -6px rgba(0, 0, 0, 0.75)
+  -moz-box-shadow: 8px 8px 9px -6px rgba(0, 0, 0, 0.75)
+  box-shadow: 8px 8px 9px -6px rgba(0, 0, 0, 0.75)
+  transition: 0.4s
+
+.projectsImg:hover
+  filter: brightness(1)
+
+.nr1:hover
+  transform: scale(2)
+  transition: 0.5s
+
+.nr2:hover
+  transform: scale(1.6)
+  transition: 0.5s
+
+.nr3:hover
+  transform: scale(3)
+  transition: 0.5s
+
+.nr4:hover
+  transform: scale(1.6)
+  transition: 0.5s
+
+.nr5:hover
+  transform: scale(1.6)
+  transition: 0.5s
+//.contactH1
+//  position: absolute
+//  color: deeppink
+//  width: 100%
+//  height: 20%
+//  background-color: green
+.h1Box
+  top: 0
+  position: absolute
+  text-align: center
+  color: deeppink
+  font-family: 'Amatic SC', cursive
+  width: 100%
+.googleMap
+  position: relative
+  display: flex
+  justify-self: flex-end
+
+.kontaktInSlider
+  display: none
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  position: absolute
+  height: 100%
+  width: 100%
+  //z-index: -1
+.linkContainer
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: auto
+.linkContainer ul
+  display: inline-block
+  list-style: none
+.linkContainer ul li
+  margin: 10%
+.icon
+  color: lightgrey
+  position: relative
+  margin: 4%
+  transition: 0.5s
+  transform: scale(4)
+
+.icon:hover
+  transition: 0.5s
+  transform: scale(4.5)
+  color: deeppink
+  cursor: pointer
+
+
+.fa-facebook-square:hover~.menuDescription
+  background-color: cornflowerblue
+.fa-phone-square-alt:hover~.menuDescription
+  background-color: indianred
+.fa-envelope-square:hover~.menuDescription
+  background-color: #19692c
+
+.returnButton
+  display: block
+  position: relative
+  top: 50%
+  left: 100%
+  transform: translate(-50%, -50%) rotate(45deg)
+  height: 5vw
+  width: 5vw
+  background-color: pink
+  margin: 0
+  animation: shadowGrow 1.2s infinite linear
+
+@keyframes shadowGrow
+  0%
+    box-shadow: 0 0 6px 2px deeppink
+  25%
+    box-shadow: 0 0 8px 4px deeppink
+  50%
+    box-shadow: 0 0 10px 6px deeppink
+  75%
+    box-shadow: 0 0 8px 4px deeppink
+  100%
+    box-shadow: 0 0 6px 2px deeppink
+
+.returnButton:hover
+  animation: ease-out
+  cursor: pointer
+  position: relative
+  top: 50%
+  left: 100%
+  transform: translate(-50%, -50%) rotate(45deg)
+  background-color: deeppink
+
+.menuDescription p
+  font-size: 1.7rem
+  text-align: center
+  margin: 2%
+  font-family: 'Amatic SC', cursive
+$breakpoint-mobile-min: 414px
+$breakpoint-mobile-max: 567px
+@media (min-width: $breakpoint-mobile-min) and (max-width: $breakpoint-mobile-max)
+//.menuDescription
+//  display: none
+$breakpoint-smartPhones-landscape-min: 568px
+$breakpoint-smartPhones-landscape-max: 812px
+@media (min-width: $breakpoint-smartPhones-landscape-min) and (max-width: $breakpoint-smartPhones-landscape-max)
+
+
+
+
+
+
